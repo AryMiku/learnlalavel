@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/product','ProductController@index');
-
-Route::post('/product/search','ProductController@search');
 Route::get('/product/search','ProductController@search');
+Route::post('/product/search','ProductController@search');
+Route::get('/product/edit/{id?}','ProductController@edit');
+Route::post('/product/update','ProductController@update');

@@ -40,8 +40,8 @@
                     <td>{{$p->category->name}}</td>
                     <td>{{ number_format($p->stock_qty , 0)}}</td>
                     <td>{{ number_format($p->price , 2)}}</td>
-                    <td>
-                        <a href="#" class="btn btn-info"><i class="fa fa-edit"></i>แก้ไข</a>
+                    <td class="bs-center">
+                        <a href="{{URL::to('product/edit/'.$p->id)}}" class="btn btn-info"><i class="fa fa-edit"></i>แก้ไข</a>
                         <a href="#" class="btn btn-danger"><i class="fa fa-trash"></i>ลบ</a>
                     </td>
                 </tr>
