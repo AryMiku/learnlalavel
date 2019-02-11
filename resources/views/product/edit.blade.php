@@ -48,6 +48,12 @@
                             <td>{{Form::label('image','เลือกรูปภาพสินค้า')}}</td>
                             <td>{{Form::file('image')}}</td>
                         </tr>
+                        @if($product->image_url)
+                        <tr>
+                            <td><strong>รูปสินค้า</strong></td>
+                        <td><img src="{{URL::to($product->image_url)}}" width="100px"></td>
+                        </tr>
+                        @endif
                     </table>
         </div>
         <div class="panel-footer">

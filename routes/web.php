@@ -20,3 +20,5 @@ Route::get('/product/search','ProductController@search');
 Route::post('/product/search','ProductController@search');
 Route::get('/product/edit/{id?}','ProductController@edit');
 Route::post('/product/update','ProductController@update');
+Route::post('/product/insert','ProductController@insert');
+Route::get('/product/remove/{id}','ProductController@remove');
